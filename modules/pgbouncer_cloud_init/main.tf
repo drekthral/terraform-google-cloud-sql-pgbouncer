@@ -16,6 +16,7 @@ locals {
       pool_mode          = var.pool_mode
       admin_users        = join(",", local.admins)
       custom_config      = var.custom_config
+      users              = var.users
     }
   )
 }
