@@ -1,11 +1,11 @@
 [databases]
-* = host=${db_host} port=${db_port}
+* = host=${db_host} port=${db_port} user=temp auth_user=temp dbname=lektory_prod password=temp
 
 [pgbouncer]
 listen_addr = 0.0.0.0
 listen_port = ${listen_port}
 unix_socket_dir =
-user = postgres
+user = temp
 auth_file = ./userlist.txt
 auth_type = any
 
