@@ -1,5 +1,8 @@
 [databases]
-* = host=${db_host} port=${db_port} user=temp auth_user=temp dbname=lektory_prod password=temp
+%{ for user in users ~}
+* = host=${db_host} port=${db_port} user=${user.name} auth_user=${user.name} dbname=lektory_prod password=${user.password}
+%{ endfor ~}
+
 
 [pgbouncer]
 listen_addr = 0.0.0.0
