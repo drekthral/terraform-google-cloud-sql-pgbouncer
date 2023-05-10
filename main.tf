@@ -12,6 +12,7 @@ module "pgbouncer_cloud_init" {
   listen_port         = var.port
   database_host       = var.database_host
   database_port       = var.database_host_port
+  database_name       = var.database_name
   users               = var.users
   auth_user           = var.auth_user
   auth_query          = var.auth_query
