@@ -20,6 +20,11 @@ variable "database_host" {
   type        = string
 }
 
+variable "database_host_port" {
+  description = "The host port of the Cloud SQL instance to connect to."
+  type        = string
+}
+
 variable "port" {
   description = "The port used by PgBouncer to listen on."
   type        = number
