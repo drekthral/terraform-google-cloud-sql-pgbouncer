@@ -22,7 +22,7 @@ variable "database_host" {
 
 variable "database_host_port" {
   description = "The host port of the Cloud SQL instance to connect to."
-  type        = string
+  type        = number
 }
 
 variable "database_name" {
