@@ -6,7 +6,7 @@ variable "database_host" {
 variable "database_port" {
   description = "The port to connect to the database with."
   type        = number
-  default     = 3315
+  default     = 5432
 }
 
 variable "listen_port" {
