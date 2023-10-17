@@ -8,7 +8,6 @@ locals {
       db_host            = var.database_host
       db_port            = var.database_port
       listen_port        = var.listen_port
-      db_name            = var.database_name
       auth_user          = var.auth_user
       auth_query         = var.auth_query
       default_pool_size  = var.default_pool_size
