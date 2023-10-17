@@ -14,11 +14,6 @@ variable "listen_port" {
   type        = number
 }
 
-variable "database_name" {
-  description = "Database name"
-  type        = string
-}
-
 variable "users" {
   description = "The list of users to be created in PgBouncer's userlist.txt. Passwords can be provided as plain-text or md5 hashes."
   type        = list
