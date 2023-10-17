@@ -25,11 +25,6 @@ variable "database_host_port" {
   type        = number
 }
 
-variable "database_name" {
-  description = "The database name."
-  type        = string
-}
-
 variable "port" {
   description = "The port used by PgBouncer to listen on."
   type        = number
